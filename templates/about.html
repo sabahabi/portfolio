@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %} About {% endblock %}
+{% block content %}
+<div class="container">
+<div class="about-me">
+            <h1>About Me</h1>
+            <p>Welcome to my portfolio! My name is sabah, and I'm a Full Stack Web Developer with a keen eye for design and a deep understanding of back-end technologies.</p>
+            <p>I hold a degree of bachelors in computer science from Govt.sadiq women university, where I developed a strong foundation in computer science.</p>
+            <p>In my free time, I enjoy coding. I am always looking to learn new things and take on exciting challenges.</p>
+            <p>Over the years, I have honed my skills in HTML, CSS, and Python, enabling me to create robust and scalable web applications.</p>
+            <p>I enjoy solving complex problems and am always eager to learn new technologies and methodologies to stay ahead in this fast-paced industry.
+            </p>
+            <p>Feel free to check out my<a href="{{url_for('download')}}"> CV </a> or <a href="{{url_for('contact')}}">get in touch</a> with me.</p>
+        </div>
+    </div>
+    <div class="Container">
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-cards">
+                <div class="project-card" style="background-image: url('../static/assets/project2.jpg');">
+                    <div class="project-content">
+                        <h3>Blog Web Application</h3>
+                        <p>Developed a full-stack blog web application using Node.js,
+                            Express.js, EJS (Embedded JavaScript), and React. The
+                            application allows users to create, view, edit, and delete blog
+                            posts.</p>
+                    </div>
+                </div>
+                <div class="project-card" style="background-image: url('../static/assets/project2.jpg');">
+                    <div class="project-content">
+                        <h3>Secret App</h3>
+                        <p>Developed an interactive web application using Node.js,
+                            Express.js, EJS, and MongoDB. The Secret App allows
+                            users to register on the website, submit their personal
+                            information securely, and retrieve their submitted data after
+                            login. User authentication is implemented using OAuth 2.0,
+                            and user data is stored in MongoDB. Only authorized users
+                            can access the application.
+                            </p>
+                    </div>
+                </div>
+                <div class="project-card" style="background-image: url('../static/assets/project2.jpg');">
+                    <div class="project-content">
+                        <h3>Point of sales system</h3>
+                        <p>Developed a fully functional system for Windows using .NET
+                            Framework in Visual Basic, with Microsoft SQL Server as the
+                            database. The system allows users to manage sales and
+                            purchases effectively and supports Urdu script for user
+                            convenience. It includes different modules for both users and
+                            administrators, providing comprehensive functionality and
+                            control.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}
